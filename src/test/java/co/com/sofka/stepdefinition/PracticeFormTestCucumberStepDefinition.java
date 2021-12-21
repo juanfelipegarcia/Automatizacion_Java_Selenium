@@ -1,77 +1,94 @@
-package co.com.sofka.runner;
+package co.com.sofka.stepdefinition;
 
 import co.com.sofka.model.PracticeFormModel;
 import co.com.sofka.page.PracticeFormPage;
 import co.com.sofka.setup.WebUI;
 import co.com.sofka.util.Gender;
 import co.com.sofka.util.Hobbies;
-import org.junit.jupiter.api.AfterEach;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class PracticeFormTest extends WebUI {
+public class PracticeFormTestCucumberStepDefinition extends WebUI {
 
     private PracticeFormPage practiceFormPage;
     private PracticeFormModel maria;
     private static final String ASSERTION_EXCEPTION_MESSAGE = "Los valores suministrados no son los esperados %s";
 
-    @BeforeEach
-    public void setUp(){
+    //Background
+    @Given("Que el empleado asministrativo se encuentra en la pagina web de los ingresos de estudiantes")
+    public void queElEmpleadoAsministrativoSeEncuentraEnLaPaginaWebDeLosIngresosDeEstudiantes() {
         try {
-            generateStudent();
             generalSetUp();
         } catch (Exception exception){
+            Assertions.fail(exception.getMessage(), exception);
             quietDriver();
         }
     }
-/*
-    @Test
-    public void practiceFormTestMandatoryFields(){
+
+    //Scenario I
+    @When("el empleado administrativo ingresa los campos obligatorios y confirma la accion")
+    public void elEmpleadoAdministrativoIngresaLosCamposObligatoriosYConfirmaLaAccion() {
         try {
-            practiceFormPage = new PracticeFormPage(maria, driver);
-            practiceFormPage.fillMandatoryFields();
+            generateStudent();
 
-            Assertions.assertEquals(
-                    practiceFormPage.isRegistrationDoneMandatory().toString(),
-                    forSubmittedFormMandatory().toString(),
-                    String.format(ASSERTION_EXCEPTION_MESSAGE, outcomeMandatory())
-            );
         }catch (Exception exception){
-            quietDriver();
             Assertions.fail(exception.getMessage(), exception);
+            quietDriver();
         }
+    }
 
-    }*/
+    @Then("el sistema debera mostrar por panmtalla el registro del estudiante ingresado")
+    public void elSistemaDeberaMostrarPorPanmtallaElRegistroDelEstudianteIngresado() {
 
+       try {
+           practiceFormPage = new PracticeFormPage(maria, driver);
+           practiceFormPage.fillMandatoryFields();
+           Assertions.assertEquals(
+                   practiceFormPage.isRegistrationDoneMandatory().toString(),
+                   forSubmittedFormMandatory().toString(),
+                   String.format(ASSERTION_EXCEPTION_MESSAGE, outcomeMandatory())
+           );
+       }catch (Exception exception){
+           quietDriver();
+       }
+        quietDriver();
+    }
 
-    @Test
-    public void practiceFromTestAllFields(){
+    //Scenario 2
+    @When("el empleado administrativo ingresa todos los campos y confirma la accion")
+    public void elEmpleadoAdministrativoIngresaTodosLosCamposYConfirmaLaAccion() {
+        try {
+            generateStudent();
+        }catch (Exception exception){
+            Assertions.fail(exception.getMessage(), exception);
+            quietDriver();
+        }
+    }
+
+    @Then("el sistema debera mostrar por panmtalla el registro completo del estudiante ingresado")
+    public void elSistemaDeberaMostrarPorPanmtallaElRegistroCompletoDelEstudianteIngresado() {
+
         try {
             practiceFormPage = new PracticeFormPage(maria, driver);
             practiceFormPage.fillAllFileds();
-
             Assertions.assertEquals(
                     practiceFormPage.isRegistrationDoneAll().toString(),
                     forSubmittedFormAll().toString(),
                     String.format(ASSERTION_EXCEPTION_MESSAGE, outcomeAll())
             );
+
         }catch (Exception exception){
             quietDriver();
-            Assertions.fail(exception.getMessage(), exception);
         }
-
-    }
-
-    @AfterEach
-    public void tearDown() throws InterruptedException {
-        //Thread.sleep(7000);
         quietDriver();
     }
+
 
     private void generateStudent(){
         maria = new PracticeFormModel();
@@ -120,7 +137,6 @@ public class PracticeFormTest extends WebUI {
         submitedFormResult.add(maria.getCurrentAddress());
         submitedFormResult.add(maria.getState() + " " + maria.getCity());
 
-
         return submitedFormResult;
     }
 
@@ -131,4 +147,5 @@ public class PracticeFormTest extends WebUI {
     private String outcomeAll(){
         return "\n" + practiceFormPage.isRegistrationDoneAll().toString() + "\n\r" + forSubmittedFormAll().toString();
     }
+
 }

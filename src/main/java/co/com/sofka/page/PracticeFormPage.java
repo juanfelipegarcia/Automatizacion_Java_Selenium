@@ -61,11 +61,12 @@ public class PracticeFormPage extends CommonActionOnpages{
     // Funtions
     public void fillMandatoryFields(){
 
-        log.debug("Log desde debug");
+        /*log.debug("Log desde debug");
         log.info("log desde info");
         log.warn("log desde warn");
         log.error("log desde error  ");
-        log.fatal("log desde fatal");
+        log.fatal("log desde fatal");*/
+
         clearText(name);
         typeInto(name,practiceFormModel.getName());
         clearText(lasName);
@@ -96,11 +97,12 @@ public class PracticeFormPage extends CommonActionOnpages{
 
     public void fillAllFileds(){
 
-        log.debug("Log desde debug");
+       /* log.debug("Log desde debug");
         log.info("log desde info");
         log.warn("log desde warn");
         log.error("log desde error  ");
-        log.fatal("log desde fatal");
+        log.fatal("log desde fatal");*/
+
         clearText(name);
         typeInto(name,practiceFormModel.getName());
         clearText(lasName);
@@ -158,7 +160,7 @@ public class PracticeFormPage extends CommonActionOnpages{
 
         scrollDown();
 
-        addFile(picture, practiceFormModel.getPicture());
+        addFile(picture, practiceFormModel.getPath()+practiceFormModel.getPicture());
 
         typeInto(address, practiceFormModel.getCurrentAddress());
 
@@ -167,6 +169,7 @@ public class PracticeFormPage extends CommonActionOnpages{
 
         typeInto(city, practiceFormModel.getCity());
         enter(city);
+        scrollDown();
 
         findElement(submitButton);
         click(submitButton);
@@ -197,8 +200,4 @@ public class PracticeFormPage extends CommonActionOnpages{
 
         return submitedFormResult;
     }
-
-
-
-
 }

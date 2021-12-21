@@ -558,3 +558,248 @@
 [2021-12-20 19:37:39] [ WARN ] [ResolverUtil$Test:66] log desde warn
 [2021-12-20 19:37:39] [ ERROR] [ResolverUtil$Test:67] log desde error  
 [2021-12-20 19:37:39] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 10:20:26] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 10:20:26] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 10:20:26] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 10:20:26] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 10:20:26] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 10:55:46] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 10:55:46] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 10:55:46] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 10:55:46] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 10:55:46] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 10:56:08] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 10:56:08] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 10:56:08] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 10:56:08] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 10:56:08] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 12:27:56] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 12:27:56] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 12:27:56] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 12:27:56] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 12:27:56] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 12:28:17] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 12:28:17] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 12:28:17] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 12:28:17] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 12:28:17] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 13:39:08] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 13:39:08] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 13:39:08] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 13:39:08] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 13:39:08] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 13:39:19] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 13:39:19] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 13:39:19] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 13:39:19] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 13:39:19] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 13:42:53] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 13:42:53] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 13:42:53] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 13:42:53] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 13:42:53] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 13:42:58] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 13:42:58] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 13:42:58] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 13:42:58] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 13:42:58] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 13:44:35] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 13:44:35] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 13:44:35] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 13:44:35] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 13:44:35] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 13:44:45] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 13:44:45] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 13:44:45] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 13:44:45] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 13:44:45] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 13:58:07] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 13:58:07] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 13:58:07] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 13:58:07] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 13:58:07] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 13:58:26] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 13:58:26] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 13:58:26] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 13:58:26] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 13:58:26] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 14:18:36] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 14:18:36] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 14:18:36] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 14:18:36] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 14:18:36] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 14:18:43] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 14:18:43] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 14:18:43] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 14:18:43] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 14:18:43] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 14:26:25] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 14:26:25] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 14:26:25] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 14:26:25] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 14:26:25] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 14:26:31] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 14:26:31] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 14:26:31] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 14:26:31] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 14:26:31] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 14:34:51] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 14:34:51] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 14:34:51] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 14:34:51] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 14:34:51] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 14:35:01] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 14:35:01] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 14:35:01] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 14:35:01] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 14:35:01] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 14:40:10] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 14:40:10] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 14:40:10] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 14:40:10] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 14:40:10] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 14:40:27] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 14:40:27] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 14:40:27] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 14:40:27] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 14:40:27] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 14:42:25] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 14:42:25] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 14:42:25] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 14:42:25] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 14:42:25] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 14:42:35] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 14:42:35] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 14:42:35] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 14:42:35] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 14:42:35] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 14:50:59] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 14:50:59] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 14:50:59] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 14:50:59] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 14:50:59] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 14:51:10] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 14:51:10] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 14:51:10] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 14:51:10] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 14:51:10] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 15:36:02] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 15:36:02] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 15:36:02] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 15:36:02] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 15:36:02] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 15:38:04] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 15:38:04] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 15:38:04] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 15:38:04] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 15:38:04] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:12:48] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 16:12:48] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 16:12:48] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 16:12:48] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 16:12:48] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 16:13:04] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:13:04] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:13:04] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:13:04] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:13:04] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:20:54] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 16:20:54] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 16:20:54] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 16:20:54] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 16:20:54] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 16:21:04] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:21:04] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:21:04] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:21:04] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:21:04] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:22:20] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 16:22:20] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 16:22:20] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 16:22:20] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 16:22:20] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 16:22:32] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:22:32] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:22:32] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:22:32] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:22:32] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:36:33] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:36:33] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:36:33] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:36:33] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:36:33] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:38:06] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:38:06] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:38:06] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:38:06] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:38:06] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:39:05] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 16:39:05] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 16:39:05] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 16:39:05] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 16:39:05] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 16:39:16] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:39:16] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:39:16] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:39:16] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:39:16] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:42:25] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:42:25] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:42:25] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:42:25] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:42:25] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:44:05] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 16:44:05] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 16:44:05] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 16:44:05] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 16:44:05] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 16:44:17] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:44:17] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:44:17] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:44:17] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:44:17] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:46:46] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 16:46:46] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 16:46:46] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 16:46:46] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 16:46:46] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 16:46:53] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:46:53] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:46:53] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:46:53] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:46:53] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:48:12] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 16:48:12] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 16:48:12] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 16:48:12] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 16:48:12] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 16:48:26] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:48:26] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:48:26] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:48:26] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:48:26] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:49:59] [ DEBUG] [ResolverUtil$Test:64] Log desde debug
+[2021-12-21 16:49:59] [ INFO ] [ResolverUtil$Test:65] log desde info
+[2021-12-21 16:49:59] [ WARN ] [ResolverUtil$Test:66] log desde warn
+[2021-12-21 16:49:59] [ ERROR] [ResolverUtil$Test:67] log desde error  
+[2021-12-21 16:49:59] [ FATAL] [ResolverUtil$Test:68] log desde fatal
+[2021-12-21 16:50:11] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:50:11] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:50:11] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:50:11] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:50:11] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:53:57] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:53:57] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:53:57] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:53:57] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:53:57] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:55:19] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:55:19] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:55:19] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:55:19] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:55:19] [ FATAL] [ResolverUtil$Test:103] log desde fatal
+[2021-12-21 16:56:20] [ DEBUG] [ResolverUtil$Test:99] Log desde debug
+[2021-12-21 16:56:20] [ INFO ] [ResolverUtil$Test:100] log desde info
+[2021-12-21 16:56:20] [ WARN ] [ResolverUtil$Test:101] log desde warn
+[2021-12-21 16:56:20] [ ERROR] [ResolverUtil$Test:102] log desde error  
+[2021-12-21 16:56:20] [ FATAL] [ResolverUtil$Test:103] log desde fatal

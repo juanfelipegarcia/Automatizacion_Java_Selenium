@@ -16,6 +16,7 @@ public class PracticeFormModel {
     private String day;
     private List<String> subject;
     private List<Hobbies> hobbies;
+    private String path;
     private String picture;
     private String currentAddress;
     private String state;
@@ -100,6 +101,10 @@ public class PracticeFormModel {
     public void setHobbies(List<Hobbies> hobbies) {
         this.hobbies = hobbies;
     }
+
+    public String getPath() { return path; }
+
+    public void setPath(String path) { this.path = path;}
 
     public String getPicture() {
         return picture;
