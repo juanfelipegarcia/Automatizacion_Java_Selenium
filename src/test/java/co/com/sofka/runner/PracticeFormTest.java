@@ -29,7 +29,6 @@ public class PracticeFormTest extends WebUI {
             quietDriver();
         }
     }
-/*
     @Test
     public void practiceFormTestMandatoryFields(){
         try {
@@ -46,7 +45,7 @@ public class PracticeFormTest extends WebUI {
             Assertions.fail(exception.getMessage(), exception);
         }
 
-    }*/
+    }
 
 
     @Test
@@ -64,12 +63,10 @@ public class PracticeFormTest extends WebUI {
             quietDriver();
             Assertions.fail(exception.getMessage(), exception);
         }
-
     }
 
     @AfterEach
     public void tearDown() throws InterruptedException {
-        //Thread.sleep(7000);
         quietDriver();
     }
 

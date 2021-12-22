@@ -44,5 +44,12 @@ public class CommonActionOnpages {
         return driver.findElement(locator).getText();
     }
 
+    protected void scrollTo(By locator){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView();", driver.findElement(locator));
+    }
+
+
+
 
 }

@@ -5,17 +5,11 @@ import co.com.sofka.page.common.CommonActionOnpages;
 import co.com.sofka.util.Hobbies;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.apache.commons.logging.LogFactory;
-import org.apache.logging.log4j.core.config.plugins.util.ResolverUtil;
-import org.apache.commons.logging.Log;
-
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class PracticeFormPage extends CommonActionOnpages{
     private final PracticeFormModel practiceFormModel;
-    public static Log log= LogFactory.getLog(ResolverUtil.Test.class);
 
     //For input test cases
     private final By name = By.id("firstName");
@@ -26,9 +20,6 @@ public class PracticeFormPage extends CommonActionOnpages{
     private final By genderOther = By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[3]");
     private final By mobile = By.id("userNumber");
     private final By date = By.id("dateOfBirthInput");
-    private final By day = By.className("react-datepicker__day");
-    private final By month = By.className("react-datepicker__month-select");
-    private final By year = By.className("react-datepicker__year-select");
     private final By subjects = By.id("subjectsInput");
     private final By hobbieSport = By.xpath("//*[@id=\"hobbiesWrapper\"]/div[2]/div[1]");
     private final By hobbieRead = By.xpath("//*[@id=\"hobbiesWrapper\"]/div[2]/div[2]");
@@ -51,8 +42,6 @@ public class PracticeFormPage extends CommonActionOnpages{
     private final By assertionAddres = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[9]/td[2]");
     private final By assertionStateCity = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[10]/td[2]");
 
-
-
     public PracticeFormPage(PracticeFormModel practiceFormModel, WebDriver webDriver) {
         super(webDriver);
         this.practiceFormModel = practiceFormModel;
@@ -60,12 +49,6 @@ public class PracticeFormPage extends CommonActionOnpages{
 
     // Funtions
     public void fillMandatoryFields(){
-
-        /*log.debug("Log desde debug");
-        log.info("log desde info");
-        log.warn("log desde warn");
-        log.error("log desde error  ");
-        log.fatal("log desde fatal");*/
 
         clearText(name);
         typeInto(name,practiceFormModel.getName());
@@ -97,12 +80,6 @@ public class PracticeFormPage extends CommonActionOnpages{
 
     public void fillAllFileds(){
 
-       /* log.debug("Log desde debug");
-        log.info("log desde info");
-        log.warn("log desde warn");
-        log.error("log desde error  ");
-        log.fatal("log desde fatal");*/
-
         clearText(name);
         typeInto(name,practiceFormModel.getName());
         clearText(lasName);
@@ -126,12 +103,11 @@ public class PracticeFormPage extends CommonActionOnpages{
         typeInto(mobile, practiceFormModel.getMobile());
 
         click(date);
-        click(year);
-        typeInto(year, practiceFormModel.getYear());
-        click(month);
-        typeInto(month, practiceFormModel.getMonth());
-        enter(month);
-        By day = By.className("react-datepicker__day--0"+practiceFormModel.getDay());
+        By selectYear = By.xpath("//option[.='"+practiceFormModel.getYear()+"']");
+        click(selectYear);
+        By selectMont = By.xpath("//option[.='"+practiceFormModel.getMonth()+"']");
+        click(selectMont);
+        By day = By.xpath("//div[contains(@aria-label,'"+practiceFormModel.getDay()+"') and contains(@aria-label,'"+practiceFormModel.getMonth()+"')]");
         click(day);
 
         scrollDown();
@@ -140,7 +116,6 @@ public class PracticeFormPage extends CommonActionOnpages{
         for (int i = 0; i < listSubjects.size(); i++) {
             typeInto(subjects, (String) listSubjects.get(i));
             enter(subjects);
-            ;
         }
 
         List listHobbies = practiceFormModel.getHobbies();

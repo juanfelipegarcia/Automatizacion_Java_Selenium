@@ -19,6 +19,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
     private PracticeFormPage practiceFormPage;
     private PracticeFormModel maria;
     private static final String ASSERTION_EXCEPTION_MESSAGE = "Los valores suministrados no son los esperados %s";
+    List <String> prueba;
 
     //Background
     @Given("Que el empleado asministrativo se encuentra en la pagina web de los ingresos de estudiantes")
@@ -77,16 +78,22 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
         try {
             practiceFormPage = new PracticeFormPage(maria, driver);
             practiceFormPage.fillAllFileds();
+
+            prueba = new ArrayList<>();
+            prueba = practiceFormPage.isRegistrationDoneAll();
+            quietDriver();
+
             Assertions.assertEquals(
-                    practiceFormPage.isRegistrationDoneAll().toString(),
+                    prueba.toString(),
                     forSubmittedFormAll().toString(),
                     String.format(ASSERTION_EXCEPTION_MESSAGE, outcomeAll())
             );
 
+
         }catch (Exception exception){
             quietDriver();
         }
-        quietDriver();
+
     }
 
 
@@ -99,7 +106,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
         maria.setMobile("3006467268");
         maria.setYear("1980");
         maria.setMonth("February");
-        maria.setDay("14");
+        maria.setDay("29");
         maria.setSubject(Arrays.asList("Physics", "Hindi", "Maths","Biology"));
         maria.setHobbies(Arrays.asList(Hobbies.READING,Hobbies.MUSIC, Hobbies.SPORTS));
         maria.setPath("C:\\WorkSpaceJava\\demoToolsQA\\src\\test\\resources\\images\\");
@@ -145,7 +152,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
     }
 
     private String outcomeAll(){
-        return "\n" + practiceFormPage.isRegistrationDoneAll().toString() + "\n\r" + forSubmittedFormAll().toString();
+        return "\n" + prueba.toString() + "\n\r" + forSubmittedFormAll().toString();
     }
 
 }
