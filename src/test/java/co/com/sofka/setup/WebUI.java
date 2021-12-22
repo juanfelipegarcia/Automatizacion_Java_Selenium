@@ -30,7 +30,6 @@ public class WebUI {
 
      */
 
-
     protected void setUpWebdriver(){
         System.setProperty(WEBDRIVER_CHROME_DRIVER, WEBDRIVER_CHROME_DRIVER_PATH);
 
@@ -41,8 +40,6 @@ public class WebUI {
         driver.get(DEMO_QA_URL);
         driver.manage().window().maximize();
     }
-
-
 
     protected void generalSetUp(){
         setUpWebdriver();

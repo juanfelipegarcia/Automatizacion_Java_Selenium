@@ -19,7 +19,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
     private PracticeFormPage practiceFormPage;
     private PracticeFormModel maria;
     private static final String ASSERTION_EXCEPTION_MESSAGE = "Los valores suministrados no son los esperados %s";
-    List <String> prueba;
+
 
     //Background
     @Given("Que el empleado asministrativo se encuentra en la pagina web de los ingresos de estudiantes")
@@ -37,6 +37,8 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
     public void elEmpleadoAdministrativoIngresaLosCamposObligatoriosYConfirmaLaAccion() {
         try {
             generateStudent();
+            practiceFormPage = new PracticeFormPage(maria, driver);
+            practiceFormPage.fillMandatoryFields();
 
         }catch (Exception exception){
             Assertions.fail(exception.getMessage(), exception);
@@ -48,8 +50,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
     public void elSistemaDeberaMostrarPorPanmtallaElRegistroDelEstudianteIngresado() {
 
        try {
-           practiceFormPage = new PracticeFormPage(maria, driver);
-           practiceFormPage.fillMandatoryFields();
+
            Assertions.assertEquals(
                    practiceFormPage.isRegistrationDoneMandatory().toString(),
                    forSubmittedFormMandatory().toString(),
@@ -57,8 +58,11 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
            );
        }catch (Exception exception){
            quietDriver();
+
+       }finally {
+           quietDriver();
        }
-        quietDriver();
+
     }
 
     //Scenario 2
@@ -66,6 +70,8 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
     public void elEmpleadoAdministrativoIngresaTodosLosCamposYConfirmaLaAccion() {
         try {
             generateStudent();
+            practiceFormPage = new PracticeFormPage(maria, driver);
+            practiceFormPage.fillAllFileds();
         }catch (Exception exception){
             Assertions.fail(exception.getMessage(), exception);
             quietDriver();
@@ -76,21 +82,16 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
     public void elSistemaDeberaMostrarPorPanmtallaElRegistroCompletoDelEstudianteIngresado() {
 
         try {
-            practiceFormPage = new PracticeFormPage(maria, driver);
-            practiceFormPage.fillAllFileds();
-
-            prueba = new ArrayList<>();
-            prueba = practiceFormPage.isRegistrationDoneAll();
-            quietDriver();
 
             Assertions.assertEquals(
-                    prueba.toString(),
-                    forSubmittedFormAll().toString(),
+                    practiceFormPage.isRegistrationDoneAll().toString(),
+                    forSubmittedFormMandatory().toString(),
                     String.format(ASSERTION_EXCEPTION_MESSAGE, outcomeAll())
             );
 
-
         }catch (Exception exception){
+            quietDriver();
+        }finally {
             quietDriver();
         }
 
@@ -120,7 +121,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
 
     public List<String> forSubmittedFormMandatory(){
         List<String> submitedFormResult = new ArrayList<>();
-        submitedFormResult.add(maria.getName() + " " + maria.getLastName());
+        submitedFormResult.add(maria.getName() + " " + maria.getName());
         submitedFormResult.add(maria.getGender().getValue());
         submitedFormResult.add(maria.getMobile());
 
@@ -129,7 +130,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
 
     public List<String> forSubmittedFormAll(){
         List<String> submitedFormResult = new ArrayList<>();
-        submitedFormResult.add(maria.getName() + " " + maria.getLastName());
+        submitedFormResult.add(maria.getName() + " " + maria.getName());
         submitedFormResult.add(maria.getEmail());
         submitedFormResult.add(maria.getGender().getValue());
         submitedFormResult.add(maria.getMobile());
@@ -152,7 +153,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
     }
 
     private String outcomeAll(){
-        return "\n" + prueba.toString() + "\n\r" + forSubmittedFormAll().toString();
+        return "\n" + practiceFormPage.isRegistrationDoneAll() + "\n\r" + forSubmittedFormAll().toString();
     }
 
 }
