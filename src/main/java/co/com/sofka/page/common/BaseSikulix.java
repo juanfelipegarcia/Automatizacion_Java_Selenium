@@ -7,7 +7,7 @@ import org.sikuli.script.Screen;
 
 public class BaseSikulix {
 
-    private static final Logger LOGGER = Logger.getLogger(BaseSikulix.class);
+    //private static final Logger LOGGER = Logger.getLogger(BaseSikulix.class);
 
     public BaseSikulix() {
         //Constructor by default.
@@ -21,7 +21,7 @@ public class BaseSikulix {
             s.click(path);
         }
         catch(FindFailed e){
-            LOGGER.warn(e.getMessage(), e);
+            //LOGGER.warn(e.getMessage(), e);
         }
     }
 
@@ -32,7 +32,7 @@ public class BaseSikulix {
             s.write(text);
         }
         catch(FindFailed e){
-            LOGGER.warn(e.getMessage(), e);
+            //LOGGER.warn(e.getMessage(), e);
         }
     }
 

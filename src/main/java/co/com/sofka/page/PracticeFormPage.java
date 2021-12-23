@@ -13,6 +13,8 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
 import java.util.List;
 
+import static io.cucumber.messages.internal.com.google.common.base.StandardSystemProperty.USER_DIR;
+
 public class PracticeFormPage extends CommonActionOnpages{
     private final PracticeFormModel practiceFormModel;
 
@@ -164,6 +166,16 @@ public class PracticeFormPage extends CommonActionOnpages{
     private final By assertionAddres = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[9]/td[2]");
     private final By assertionStateCity = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[10]/td[2]");
     */
+
+    //Sikulix elements.
+    private static final String ATTACHMENT_FILE_PATCH = USER_DIR.value() + "\\src\\test\\resources\\images\\";
+
+    private static final String PAGE_BASE_PATCH = USER_DIR.value() + "\\src\\main\\resources\\page\\practiceform\\";
+    private static final String SELECT_PICTURE_PATCH = PAGE_BASE_PATCH + "selectPicture.png";
+    private static final String SELECT_OPEN_PATCH = PAGE_BASE_PATCH + "open.png";
+    private static final String FILE_NAME_TEXT_BOX_PATCH = PAGE_BASE_PATCH + "fileName.png";
+
+
     //Constructor
     public PracticeFormPage(PracticeFormModel practiceFormModel, WebDriver webDriver) {
         super(webDriver);
@@ -197,6 +209,8 @@ public class PracticeFormPage extends CommonActionOnpages{
         scrollDown();
 
         click(submitButton);
+
+
 
     }
 
@@ -259,7 +273,11 @@ public class PracticeFormPage extends CommonActionOnpages{
 
         scrollDown();
 
-        addFile(picture, practiceFormModel.getPath()+practiceFormModel.getPicture());
+        //addFile(picture, practiceFormModel.getPath()+practiceFormModel.getPicture());
+
+        click(SELECT_PICTURE_PATCH);
+        typeInto(FILE_NAME_TEXT_BOX_PATCH, ATTACHMENT_FILE_PATCH+practiceFormModel.getPicture());
+        click(SELECT_OPEN_PATCH);
 
         typeInto(address, practiceFormModel.getCurrentAddress());
 
