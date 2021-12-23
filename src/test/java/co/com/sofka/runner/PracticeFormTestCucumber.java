@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         features = {"src/test/resources/features/practice_form.feature"},
         glue = {"co.com.sofka.stepdefinition"},
-        tags = "",
+        //tags = "",
         publish = true
 )
 

@@ -2,10 +2,12 @@ package co.com.sofka.runner;
 
 import co.com.sofka.model.PracticeFormModel;
 import co.com.sofka.page.PracticeFormPage;
+import co.com.sofka.page.common.BaseSikulix;
 import co.com.sofka.setup.WebUI;
 import co.com.sofka.util.Gender;
 import co.com.sofka.util.Hobbies;
 import co.com.sofka.util.Student;
+import org.apache.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,8 +19,9 @@ import java.util.List;
 
 import static co.com.sofka.util.Utilities.userDir;
 
-public class PracticeFormTest extends WebUI {
+class PracticeFormTest extends WebUI {
 
+    private static final Logger LOGGER = Logger.getLogger(PracticeFormTest.class);
     private PracticeFormPage practiceFormPage;
     private PracticeFormModel maria;
     private static final String ASSERTION_EXCEPTION_MESSAGE = "Los valores suministrados no son los esperados %s";
@@ -26,14 +29,16 @@ public class PracticeFormTest extends WebUI {
     @BeforeEach
     public void setUp(){
         try {
-            generateStudent();
             generalSetUp();
+            generateStudent();
+            LOGGER.info("Configuracion inicial del driver");
         } catch (Exception exception){
             quietDriver();
+            LOGGER.warn(exception.getMessage(), exception);
         }
     }
     @Test
-    public void practiceFormTestMandatoryFields(){
+    void practiceFormTestMandatoryFields(){
         try {
             practiceFormPage = new PracticeFormPage(maria, driver);
             practiceFormPage.fillMandatoryFields();
@@ -52,7 +57,7 @@ public class PracticeFormTest extends WebUI {
 
 
     @Test
-    public void practiceFromTestAllFields(){
+    void practiceFromTestAllFields(){
         try {
             practiceFormPage = new PracticeFormPage(maria, driver);
             practiceFormPage.fillAllFileds();
@@ -69,7 +74,7 @@ public class PracticeFormTest extends WebUI {
     }
 
     @AfterEach
-    public void tearDown() throws InterruptedException {
+    public void tearDown()  {
         quietDriver();
     }
 
@@ -91,7 +96,6 @@ public class PracticeFormTest extends WebUI {
         maria.setCity("Agra");
         maria.setCurrentAddress("Cra 65 A N° 44-66 Bello Ant, barrio bellavista");
 
-
     }
 
     public List<String> forSubmittedFormMandatory(){
@@ -110,9 +114,7 @@ public class PracticeFormTest extends WebUI {
         submitedFormResult.add(maria.getGender().getValue());
         submitedFormResult.add(maria.getMobile());
         submitedFormResult.add(maria.getDay() + " " + maria.getMonth()+ "," +maria.getYear());
-        for (int i = 0; i<maria.getSubject().size(); i++){
-            submitedFormResult.add(maria.getSubject().get(i));
-        }
+        submitedFormResult.addAll(maria.getSubject());
         for (int i = 0; i<maria.getHobbies().size(); i++){
             submitedFormResult.add(maria.getHobbies().get(i).getValue());
         }

@@ -111,7 +111,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
         maria.setYear("1980");
         maria.setMonth("February");
         maria.setDay("29");
-        maria.setSubject(Arrays.asList("Physics", "Hindi", "Maths","Biology"));
+        maria.setSubject(Arrays.asList("Physics", "Hindi", "Maths"));
         maria.setHobbies(Arrays.asList(Hobbies.READING,Hobbies.MUSIC, Hobbies.SPORTS));
         maria.setPath(userDir()+ Student.PHOTO.getValue());
         maria.setPicture("LUCA.jpg");
@@ -138,9 +138,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
         submitedFormResult.add(maria.getGender().getValue());
         submitedFormResult.add(maria.getMobile());
         submitedFormResult.add(maria.getDay() + " " + maria.getMonth()+ "," +maria.getYear());
-        for (int i = 0; i<maria.getSubject().size(); i++){
-            submitedFormResult.add(maria.getSubject().get(i));
-        }
+        submitedFormResult.addAll(maria.getSubject());
         for (int i = 0; i<maria.getHobbies().size(); i++){
             submitedFormResult.add(maria.getHobbies().get(i).getValue());
         }

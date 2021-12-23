@@ -19,10 +19,6 @@ public class PracticeFormPage extends CommonActionOnpages{
     private final PracticeFormModel practiceFormModel;
 
     //For input test cases
-
-
-
-
     @CacheLookup
     @FindBy(id = "firstName")
     private WebElement name;
@@ -91,30 +87,7 @@ public class PracticeFormPage extends CommonActionOnpages{
     @FindBy(id = "submit")
     private WebElement submitButton;
 
-
-
-    //private final By name = By.id("firstName");
-    //private final By lastName = By.id("lastName");
-    //private final By email = By.id("userEmail");
-//    private final By genderMale = By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[1]");
-//    private final By genderFemale = By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[2]");
-//    private final By genderOther = By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[3]");
-//    private final By mobile = By.id("userNumber");
-//    private final By date = By.id("dateOfBirthInput");
-//    private final By subjects = By.id("subjectsInput");
-//    private final By hobbieSport = By.xpath("//*[@id=\"hobbiesWrapper\"]/div[2]/div[1]");
-//    private final By hobbieRead = By.xpath("//*[@id=\"hobbiesWrapper\"]/div[2]/div[2]");
-//    private final By hobbieMusic = By.xpath("//*[@id=\"hobbiesWrapper\"]/div[2]/div[3]");
-//    private final By address = By.id("currentAddress");
-//    private final By picture = By.id("uploadPicture");
-//    private final By state = By.id("react-select-3-input");
-//    private final By city = By.id("react-select-4-input");
-//    private final By submitButton = By.id("submit");
-
-
-
     // For validations
-
     @CacheLookup
     @FindBy(xpath = "/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[1]/td[2]")
     private WebElement assertionStudenName;
@@ -154,18 +127,6 @@ public class PracticeFormPage extends CommonActionOnpages{
     @CacheLookup
     @FindBy(xpath = "/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[10]/td[2]")
     private WebElement assertionStateCity;
-/*
-    private final By assertionStudenName = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[1]/td[2]");
-    private final By assertionEmail = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[2]/td[2]");
-    private final By assertionGender = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[3]/td[2]");
-    private final By assertionMobile = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[4]/td[2]");
-    private final By assertionBirthDate = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[5]/td[2]");
-    private final By assertionSubjects = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[6]/td[2]");
-    private final By assertionHobbies = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[7]/td[2]");
-    private final By assertionPicture = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[8]/td[2]");
-    private final By assertionAddres = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[9]/td[2]");
-    private final By assertionStateCity = By.xpath("/html/body/div[4]/div/div/div[2]/div/table/tbody/tr[10]/td[2]");
-    */
 
     //Sikulix elements.
     private static final String ATTACHMENT_FILE_PATCH = USER_DIR.value() + "\\src\\test\\resources\\images\\";
@@ -174,7 +135,6 @@ public class PracticeFormPage extends CommonActionOnpages{
     private static final String SELECT_PICTURE_PATCH = PAGE_BASE_PATCH + "selectPicture.png";
     private static final String SELECT_OPEN_PATCH = PAGE_BASE_PATCH + "open.png";
     private static final String FILE_NAME_TEXT_BOX_PATCH = PAGE_BASE_PATCH + "fileName.png";
-
 
     //Constructor
     public PracticeFormPage(PracticeFormModel practiceFormModel, WebDriver webDriver) {
@@ -185,7 +145,6 @@ public class PracticeFormPage extends CommonActionOnpages{
 
     // Funtions
     public void fillMandatoryFields(){
-
         clearText(name);
         typeInto(name,practiceFormModel.getName());
         clearText(lastName);
@@ -240,7 +199,6 @@ public class PracticeFormPage extends CommonActionOnpages{
 
         click(date);
 
-
         By selectYear = By.xpath("//option[.='"+practiceFormModel.getYear()+"']");
         click(selectYear);
         By selectMont = By.xpath("//option[.='"+practiceFormModel.getMonth()+"']");
@@ -272,8 +230,6 @@ public class PracticeFormPage extends CommonActionOnpages{
         }
 
         scrollDown();
-
-        //addFile(picture, practiceFormModel.getPath()+practiceFormModel.getPicture());
 
         click(SELECT_PICTURE_PATCH);
         typeInto(FILE_NAME_TEXT_BOX_PATCH, ATTACHMENT_FILE_PATCH+practiceFormModel.getPicture());

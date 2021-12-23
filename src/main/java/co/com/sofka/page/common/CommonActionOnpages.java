@@ -47,9 +47,6 @@ public class CommonActionOnpages extends BaseSikulix{
         jse.executeScript("arguments[0].scrollIntoView();", driver.findElement(locator));
     }
 
-
-
-
     protected void typeInto(WebElement webElement, String value){
         webElement.sendKeys(value);
     }
@@ -58,12 +55,9 @@ public class CommonActionOnpages extends BaseSikulix{
         webElement.clear();
     }
 
-
     protected void click(WebElement webElement){
         webElement.click();
     }
-
-
 
     protected void enter(WebElement webElement){
         webElement.sendKeys(Keys.ENTER);

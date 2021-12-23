@@ -4,10 +4,6 @@ X
 :
 
 avisos.log,f\b\fba94724ef49b710f6ab8ea71ceb80da92e870ac
-g
-7src/main/java/co/com/sofka/model/PracticeFormModel.java,c\c\cced29bd2852b5a571199021a02a7fb6605a1c00
-[
-+src/main/java/co/com/sofka/util/Gender.java,2\d\2de349a11a5019501a4405b2664bedca9edf33bc
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
