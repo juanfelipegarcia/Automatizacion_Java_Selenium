@@ -5,6 +5,7 @@ import co.com.sofka.page.PracticeFormPage;
 import co.com.sofka.setup.WebUI;
 import co.com.sofka.util.Gender;
 import co.com.sofka.util.Hobbies;
+import co.com.sofka.util.Student;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,6 +14,8 @@ import org.junit.jupiter.api.Assertions;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import static co.com.sofka.util.Utilities.userDir;
 
 public class PracticeFormTestCucumberStepDefinition extends WebUI {
 
@@ -85,7 +88,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
 
             Assertions.assertEquals(
                     practiceFormPage.isRegistrationDoneAll().toString(),
-                    forSubmittedFormMandatory().toString(),
+                    forSubmittedFormAll().toString(),
                     String.format(ASSERTION_EXCEPTION_MESSAGE, outcomeAll())
             );
 
@@ -110,7 +113,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
         maria.setDay("29");
         maria.setSubject(Arrays.asList("Physics", "Hindi", "Maths","Biology"));
         maria.setHobbies(Arrays.asList(Hobbies.READING,Hobbies.MUSIC, Hobbies.SPORTS));
-        maria.setPath("C:\\WorkSpaceJava\\demoToolsQA\\src\\test\\resources\\images\\");
+        maria.setPath(userDir()+ Student.PHOTO.getValue());
         maria.setPicture("LUCA.jpg");
         maria.setState("Uttar Pradesh");
         maria.setCity("Agra");
@@ -121,7 +124,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
 
     public List<String> forSubmittedFormMandatory(){
         List<String> submitedFormResult = new ArrayList<>();
-        submitedFormResult.add(maria.getName() + " " + maria.getName());
+        submitedFormResult.add(maria.getName() + " " + maria.getLastName());
         submitedFormResult.add(maria.getGender().getValue());
         submitedFormResult.add(maria.getMobile());
 
@@ -130,7 +133,7 @@ public class PracticeFormTestCucumberStepDefinition extends WebUI {
 
     public List<String> forSubmittedFormAll(){
         List<String> submitedFormResult = new ArrayList<>();
-        submitedFormResult.add(maria.getName() + " " + maria.getName());
+        submitedFormResult.add(maria.getName() + " " + maria.getLastName());
         submitedFormResult.add(maria.getEmail());
         submitedFormResult.add(maria.getGender().getValue());
         submitedFormResult.add(maria.getMobile());

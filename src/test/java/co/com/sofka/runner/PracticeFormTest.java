@@ -5,6 +5,7 @@ import co.com.sofka.page.PracticeFormPage;
 import co.com.sofka.setup.WebUI;
 import co.com.sofka.util.Gender;
 import co.com.sofka.util.Hobbies;
+import co.com.sofka.util.Student;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,6 +14,8 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import static co.com.sofka.util.Utilities.userDir;
 
 public class PracticeFormTest extends WebUI {
 
@@ -82,7 +85,7 @@ public class PracticeFormTest extends WebUI {
         maria.setDay("14");
         maria.setSubject(Arrays.asList("Physics", "Hindi", "Maths","Biology"));
         maria.setHobbies(Arrays.asList(Hobbies.READING,Hobbies.MUSIC, Hobbies.SPORTS));
-        maria.setPath("C:\\WorkSpaceJava\\demoToolsQA\\src\\test\\resources\\images\\");
+        maria.setPath(userDir()+ Student.PHOTO.getValue());
         maria.setPicture("LUCA.jpg");
         maria.setState("Uttar Pradesh");
         maria.setCity("Agra");
